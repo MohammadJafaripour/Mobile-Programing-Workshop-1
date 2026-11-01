@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-const studentName = 'Mohammad Jafaripour';
-const studentId = '401105797';
+const studentName = 'محمد جعفری پور';
+const studentId = '۴۰۱۱۰۵۷۹۷';
 
 void main() {
   runApp(const MyApp());
@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     OutlinedButton.icon(
                       onPressed: _counter == 0 ? null : _decrementCounter,
                       icon: const Icon(Icons.remove),
-                      label: const Text('کاهش'),
+                      label: const Text('Decrease'),
                     ),
                   ],
                 ),
@@ -119,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'افزایش',
+        tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
     );
