@@ -1,35 +1,41 @@
-﻿# ورکشاپ ۱ — شمارندهٔ Flutter
+# Workshop 1: Flutter Counter
 
-- نام: Mohammad Jafaripour
-- کد دانشجویی: 401105797
+**Student:** Mohammad Jafaripour
 
-عنوان AppBar شامل «ورکشاپ ۱» و کد دانشجویی است. نام و کد دانشجویی زیر شمارنده نمایش داده می‌شوند.
+**Student ID:** 401105797
 
-## قابلیت‌ها
+A Flutter counter app for the first Mobile Programming workshop. The app bar displays the workshop title and student ID, and the student's name and ID appear below the counter.
 
-- افزایش شمارنده با دکمهٔ `+`.
-- صفر کردن شمارنده با دکمهٔ `Reset`.
-- نمایش عدد زوج با رنگ سبز و عدد فرد با رنگ قرمز.
-- کاهش شمارنده با دکمهٔ «کاهش»؛ این دکمه در صفر غیرفعال می‌شود و مقدار شمارنده منفی نمی‌شود.
+## Features
 
-## اجرا
+- Increment the counter with the `+` button.
+- Reset the counter to zero with `Reset`.
+- Display even values in green and odd values in red.
+- Decrement the counter without going below zero. The decrement button is disabled at zero.
+- Use a right-to-left layout with Persian interface labels.
 
-از داخل پوشهٔ `workshop1` اجرا کنید:
+## Run
+
+From the `workshop1` directory:
 
 ```sh
 flutter pub get
 flutter run -d chrome
 ```
 
-برای دستگاه اندرویدی متصل یا شبیه‌ساز نیز می‌توانید از `flutter run` استفاده کنید.
+For a connected Android device or a running emulator, use `flutter run` and select the target device when prompted.
 
-## بررسی
+## Validation
 
 ```sh
 flutter analyze
 flutter test
 ```
 
-برنامه با `flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8765` اجرا و در مرورگر بررسی شد. افزایش، کاهش تا صفر، غیرفعال بودن کاهش در صفر و عملکرد Reset بررسی شدند. تصویر زیر شمارنده را روی عدد زوج ۲ نشان می‌دهد.
+The app was also run in a browser to check incrementing, decrementing, the zero lower bound, and Reset.
 
-![تصویر اجرای برنامه](screenshot.png)
+## Screenshot
+
+The screenshot shows the counter at an even value of 2.
+
+![Flutter counter app](screenshot.png)
