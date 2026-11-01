@@ -17,19 +17,18 @@ int? maxOf(List<int> numbers) {
 }
 
 void main() {
-  // Sample 1.
+
   print(evens([1, 2, 3, 4, 5, 6]));
   print(maxOf([3, 9, 2]));
 
-  // Sample 2.
+
   print(evens([7, 9]));
   print(maxOf([]));
 
-  // Empty list and negative numbers.
   print(evens([]));
   print(maxOf([-8, -3, -12]));
 
-  // Zero, negative even numbers, and a single-element list.
+
   print(evens([-4, -1, 0, 3, 6]));
   print(maxOf([5]));
 }
