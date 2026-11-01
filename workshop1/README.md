@@ -1,17 +1,35 @@
-# workshop1
+﻿# ورکشاپ ۱ — شمارندهٔ Flutter
 
-A new Flutter project.
+- نام: Mohammad Jafaripour
+- کد دانشجویی: 401105797
 
-## Getting Started
+عنوان AppBar شامل «ورکشاپ ۱» و کد دانشجویی است. نام و کد دانشجویی زیر شمارنده نمایش داده می‌شوند.
 
-This project is a starting point for a Flutter application.
+## قابلیت‌ها
 
-A few resources to get you started if this is your first Flutter project:
+- افزایش شمارنده با دکمهٔ `+`.
+- صفر کردن شمارنده با دکمهٔ `Reset`.
+- نمایش عدد زوج با رنگ سبز و عدد فرد با رنگ قرمز.
+- کاهش شمارنده با دکمهٔ «کاهش»؛ این دکمه در صفر غیرفعال می‌شود و مقدار شمارنده منفی نمی‌شود.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## اجرا
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+از داخل پوشهٔ `workshop1` اجرا کنید:
+
+```sh
+flutter pub get
+flutter run -d chrome
+```
+
+برای دستگاه اندرویدی متصل یا شبیه‌ساز نیز می‌توانید از `flutter run` استفاده کنید.
+
+## بررسی
+
+```sh
+flutter analyze
+flutter test
+```
+
+برنامه با `flutter run -d web-server --web-hostname 127.0.0.1 --web-port 8765` اجرا و در مرورگر بررسی شد. افزایش، کاهش تا صفر، غیرفعال بودن کاهش در صفر و عملکرد Reset بررسی شدند. تصویر زیر شمارنده را روی عدد زوج ۲ نشان می‌دهد.
+
+![تصویر اجرای برنامه](screenshot.png)
